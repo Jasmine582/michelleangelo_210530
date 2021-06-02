@@ -271,7 +271,8 @@ a {
   
 }
 .trailer,
-.wrapper {
+.wrapper,
+.contact-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -279,6 +280,7 @@ a {
   margin-top: 10%;
 }
 .trailer h1,
+.wrapper h1,
 .wrapper h1
  {
     color:var(--clr-mobile-header);
@@ -292,16 +294,26 @@ a {
     width:100%;
 }
  .trailer h1 span,
- .wrapper h1 span {
+ .wrapper h1 span,
+ .contact-wrapper h1 span {
   font-size: 3.9rem;
  }
 
-
+.wrapper h1 a,
+.wrapper h1 span a,
+.trailer h1 a,
+.trailer h1 span a,
+.contact-wrapper h1 a,
+.contact-wrapper h1 span a{
+  color:var(--clr-mobile-header);
+}
 
 /*=========Navigation Bar======================*/
 .topnav {
   overflow: hidden;
   margin-top:-8%;
+  
+  
 }
 
 .topnav a {
@@ -312,11 +324,23 @@ a {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  background-color: var(--clr-mobile-text-bg);
+  
 }
 
 
-.topnav .icon {
+
+.topnav .icon,
+.contact-wrapper .topnav .icon {
   display:none;
+  background-color:inherit;
+  
+}
+@media(min-width:600px){
+  .topnav a {
+    background-color:inherit;
+    
+  }
 }
 
 .topnav a:hover {
@@ -331,7 +355,6 @@ a {
   overflow: hidden;
  
 }
-
 .dropdown .dropbtn {
   font-size: 17px;    
   border: none;
@@ -341,14 +364,12 @@ a {
   font-family: inherit;
   margin: 0;
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
   min-width: 160px;
   z-index: 1;
 }
-
 .dropdown-content a {
   float: none;
   color: black;
@@ -357,14 +378,10 @@ a {
   display: block;
   text-align: left;
 }
-
-
-
 .dropdown-content a:hover {
   background-color: #FFF8E7;
   color: black;
 }
-
 .dropdown:hover .dropdown-content {
   display: block;
 } */
@@ -882,6 +899,8 @@ margin-left: 15em;
 
 video{
   max-width:90%;
+  margin-top: -2%;
+  margin-bottom: -5%;
 }
  /* Responsive Navigation Bar */
   
@@ -982,9 +1001,13 @@ width: 89em;
    margin-top: 7rem;
    width:55%;
  }
-video{
+
+
+video {
   max-width:75%;
   margin-left: 15rem;
+  margin-top:-2%;
+  margin-bottom: -24%;
 }
 .sm {
   margin-left: 43rem;
@@ -1014,12 +1037,27 @@ video{
 }
 
 
-
-
-
-
+.wrapper .topnav,
+.trailer .topnav {
+  margin-top: 4%;
 }
 
+.email {
+ margin-left: 27%;
+}
+
+
+.newsletter h2{
+  font-size: 2.7rem;
+}
+.topnav{
+  margin-left: 7%;
+  margin-bottom: 4%;
+}
+.big a {
+  margin-bottom: -9%;
+}
+}
 
 
 @media print,
@@ -1103,4 +1141,3 @@ video{
     page-break-after: avoid;
   }
 }
-
