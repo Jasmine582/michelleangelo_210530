@@ -309,67 +309,53 @@ a {
 }
 
 /*=========Navigation Bar======================*/
+
 .topnav {
   overflow: hidden;
-  margin-top:-8%;
-  
-  
+  background-color: inherit;
 }
 
 .topnav a {
   float: left;
   display: block;
-  color:var(--clr-mobile-para);
+  color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  background-color: var(--clr-mobile-text-bg);
-  
 }
 
 
 
-.topnav .icon,
-.contact-wrapper .topnav .icon {
-  display:none;
-  background-color:inherit;
-  
-}
-@media(min-width:600px){
-  .topnav a {
-    background-color:inherit;
-    
-  }
+.topnav .icon {
+  display: none;
 }
 
-.topnav a:hover {
-  background-color: rgba(255,182,193,1);
-  color: var(--clr-mobile-text-bg);
-  text-decoration:underline;
-}
-
-/*To add more than one purchase link on nav bar*/
-/* .dropdown {
+.dropdown {
   float: left;
   overflow: hidden;
- 
 }
+
 .dropdown .dropbtn {
   font-size: 17px;    
   border: none;
   outline: none;
+  color: white;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
 }
+
 .dropdown-content {
   display: none;
   position: absolute;
+  background-color: #f9f9f9;
   min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
+
 .dropdown-content a {
   float: none;
   color: black;
@@ -378,13 +364,20 @@ a {
   display: block;
   text-align: left;
 }
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: var(--clr-mobile-text-bg);
+  color: var(--clr-mobile-header);
+}
+
 .dropdown-content a:hover {
-  background-color: #FFF8E7;
+  background-color: #ddd;
   color: black;
 }
+
 .dropdown:hover .dropdown-content {
   display: block;
-} */
+}
 
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
@@ -393,6 +386,7 @@ a {
   .topnav a.icon {
     float: right;
     display: block;
+    background-color: var(--clr-mobile-header);
   }
 }
 
@@ -415,12 +409,26 @@ a {
     width: 100%;
     text-align: left;
   }
+ 
 }
-
-
+@media(min-width:768px){
+  .dropdown .dropbtn {
+   font-size: 1.3rem;
+    padding: 15.3px 16px;
+    
+  }
+  
+}
+@media(min-width:1024px){
+  .dropdown .dropbtn {
+    font-size: 1.92rem;
+     padding: 15.3px 16px;
+     
+   }
+}
 video {
   margin-top:3%;
-  margin-bottom: 5%;
+  margin-bottom: -1%;
   width: 100%;
   
 }
@@ -574,6 +582,34 @@ video {
    font-weight: 900;
 }
 
+.prices {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow:column wrap;
+}
+
+@media(min-width:768px){
+  .prices {
+    margin-right: 70%;
+    margin-top: -4%;
+   
+  }
+  .prices h2{
+    font-size: 30px;
+  }
+  .prices h5 {
+    font-size: 20px;
+  }
+}
+@media(min-width:1080px){
+
+.prices {
+   margin-left: 5%;
+    margin-top: -8%;
+   
+  }
+}
 /*===AUTHOR PAGE===============*/
 #author h2 {
 
