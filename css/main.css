@@ -170,7 +170,7 @@ form select {
   
     
     @keyframes move {
-        0% {color:#53CCD5; left:0px; top:0px;}
+        0% {color:#fff8e7; left:0px; top:0px;}
         25% {color: #ffb6c1; left:200px; top:0px;}
         50% {color:#fff8e7; left: 200px; top:200px;}
     }
@@ -1032,6 +1032,7 @@ width: 89em;
   }
 }
 @media only screen and (min-width:1900px) {
+
  .trailer h1,
  .wrapper h1 {
    margin-top: 7rem;
@@ -1048,8 +1049,32 @@ video {
 .sm {
   margin-left: 43rem;
 }
-.wrapper{
-  max-width:1800px;
+.wrapper,
+.trailer{
+  max-width:1024px;
+}
+.prices {
+  margin-top: 1rem;
+ 
+}
+.wrapper .big{
+margin-bottom: 10%;
+margin-left: 10%;
+}
+ .book{
+  margin-bottom: 3%;
+}
+#myTopnav{
+  margin-bottom: 3%;
+  padding: 4%;
+
+}
+.divder{
+  display:none;
+}
+.dropdown .dropbtn{
+  font-size: 1.7rem;
+  animation:move 24s infinite;
 }
 #book .split,
 #author .split{
@@ -1072,27 +1097,10 @@ video {
   margin-left: 15rem;
 }
 
-
-.wrapper .topnav,
-.trailer .topnav {
-  margin-top: 4%;
-}
-
 .email {
- margin-left: 27%;
-}
+  margin-left: 27%;
+ }
 
-
-.newsletter h2{
-  font-size: 2.7rem;
-}
-.topnav{
-  margin-left: 7%;
-  margin-bottom: 4%;
-}
-.big a {
-  margin-bottom: -9%;
-}
 }
 
 
