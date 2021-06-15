@@ -379,7 +379,7 @@ a {
   display: block;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
   }
@@ -390,7 +390,7 @@ a {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -434,7 +434,10 @@ video {
 }
 
 #trailer .copyright {
-  padding-top:35%;
+  padding-top:15%;
+}
+#author-footer .copyright{
+  padding-top:15%;
 }
 .newsletter {
   margin:0 auto;
@@ -587,6 +590,7 @@ video {
   align-items: center;
   justify-content: center;
   flex-flow:column wrap;
+  margin-top: 14%;
 }
 
 @media(min-width:768px){
@@ -626,8 +630,13 @@ video {
   line-height: 1.1rem;
 }
 
-
-
+/*======Contact Page======================*/
+@media(max-width:414px){
+#contact .big {
+  padding:1.2%;
+  /* margin-top: -1%; */
+}
+}
   
 
 
@@ -852,6 +861,14 @@ video {
   margin-left: 2em;
 }
 
+@media only screen and (min-width:779px){
+  .prices{
+    margin-top: 1%;
+  }
+  #book-footer .copyright{
+    margin-bottom:2%;
+  }
+}
 /*============AUTHOR=========*/
 
 #begin {
@@ -1102,7 +1119,9 @@ margin-left: 10%;
  }
 
 }
-
+.trailer-footer{
+  margin-top: 18%;
+}
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
